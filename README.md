@@ -30,3 +30,17 @@ following property.
 - Database : db1
 - Database port : 3306
 - Database hostname : localhost 
+
+# How to run the project ?
+- Open Intellij
+- Go to File -> Open 
+- Locate cloned folder
+- Look at top right corner and locate "Green Play Button" after "FobApplication". Click the play button.
+
+# NOTE :
+- Application will automatically fill database. 
+
+# Default Login 
+- email : soumen@soumen.com
+- idcode : 5123124
+- password : test123
