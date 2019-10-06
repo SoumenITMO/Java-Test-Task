@@ -21,6 +21,7 @@
         <dbport>3306</dbport>
         <dbhost>localhost</dbhost>
         <dbusername>root</dbusername>
+        <dbpassword></dbpassword>
     </properties>
 
 
