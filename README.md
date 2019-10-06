@@ -40,6 +40,9 @@ following property.
 # NOTE :
 - Application will automatically fill database. 
 
+# Navigate to this address if configuration didn't change
+- http://localhost:85
+
 # Default Login 
 - email : soumen@soumen.com
 - idcode : 5123124
