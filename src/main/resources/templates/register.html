@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Registration</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <span>
+        <h2> User Registration </h2>
+    </span>
+
+    <div class="registration-page">
+        <form action="/registerNewUser" method="post">
+            <div class="form-group">
+                <label for="fname">First Name:</label>
+                <input type="text" name="fname" required=true class="form-control" id="fname">
+            </div>
+            <div class="form-group">
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" required=true class="form-control" id="lname">
+            </div>
+            <div class="form-group">
+                <label for="idcode">ID Code:</label>
+                <input type="number" name="idcode" required=true class="form-control" id="idcode">
+                <span th:text="${invalidIdCode}" style="color:red"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" required=true class="form-control" id="email">
+                <span th:text="${invalidEmail}" style="color:red"></span>
+            </div>
+            <div class="form-group">
+                <label for="bday">Birthday:</label>
+                <input type="date" name="bday" placeholder="DD/MM/YYYY" required=true class="form-control" id="bday">
+                <span th:text="${invalidBirthDate}" style="color:red"></span>
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" name="password" required=true class="form-control" id="pwd">
+            </div>
+            <button type="submit" class="btn btn-default">Register</button>
+            <span>
+                <a href="/login" class="btn btn-info" role="button">Login</a>
+            </span>
+        </form>
+    <span th:text="${missingData}" style="color:red;font-size: 20px"></span>
+        <span th:text="${showError}" style="color:red;font-size: 20px"></span>
+
+    </div>
+</body>
+</html>

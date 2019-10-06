@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <h2>Login</h2>
+    <form action="/userLogin" method="post">
+        <div class="form-group">
+            <label class="sr-only" for="email">Email:</label>
+            <input type="email" name="email" placeholder="Email" required=true class="form-control" id="email">
+        </div>
+        <div class="form-group">
+            <label class="sr-only" for="email">ID-CODE:</label>
+            <input type="number" name="id_code" placeholder="ID-Code" required=true class="form-control" id="id_code">
+        </div>
+        <div class="form-group">
+            <label class="sr-only" for="pwd">Password:</label>
+            <input type="password" name="password" placeholder="password" required=true class="form-control" id="pwd">
+        </div>
+        <button type="submit" class="btn btn-default">Login</button>
+        <span>
+            <a href="/registrationPage" class="btn btn-info" role="button">Register</a>
+        </span>
+    </form>
+</div>
+</body>
+
+</html>
